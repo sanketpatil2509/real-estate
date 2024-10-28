@@ -1,0 +1,471 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB6E04FB-2F33-43EB-B4C8-762E52B70C72}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resposive_Website</RootNamespace>
+    <AssemblyName>Resposive_Website</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44314</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calender.jpg" />
+    <Content Include="EstateAgency\EstateAgency\401.html" />
+    <Content Include="EstateAgency\EstateAgency\404.html" />
+    <Content Include="EstateAgency\EstateAgency\500.html" />
+    <Content Include="EstateAgency\EstateAgency\about.aspx" />
+    <Content Include="EstateAgency\EstateAgency\about.html" />
+    <Content Include="EstateAgency\EstateAgency\adminagent.aspx" />
+    <Content Include="EstateAgency\EstateAgency\admincontact.aspx" />
+    <Content Include="EstateAgency\EstateAgency\adminrent.aspx" />
+    <Content Include="EstateAgency\EstateAgency\agentdetails.aspx" />
+    <Content Include="EstateAgency\EstateAgency\agents.aspx" />
+    <Content Include="EstateAgency\EstateAgency\agents.html" />
+    <Content Include="EstateAgency\EstateAgency\assets\css\main.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\demo\chart-area-demo.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\demo\chart-bar-demo.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\demo\chart-pie-demo.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\demo\datatables-demo.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\about-company-1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\about-company-2.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\about-company-3.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\aboutimg.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\apple-touch-icon.png" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\back10.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\back2img.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\back3img.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\back4img.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\back5img.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\back6img.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\back9.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\backimg.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\bgaboutimg.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\bookingpage.jpeg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\error-404-monochrome.svg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\favicon.png" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\features-bg.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\floor-plan.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\hero-carousel\hero-carousel-1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\hero-carousel\hero-carousel-2.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\hero-carousel\hero-carousel-3.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\logo.png" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\properties\property-1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\properties\property-2.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\properties\property-3.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\properties\property-4.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\properties\property-5.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\properties\property-6.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\property-slide\property-slide-1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\property-slide\property-slide-2.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\property-slide\property-slide-3.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\services.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\team\agent1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\team\agent2.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\team\agent3.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\team\team-1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\team\team-2.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\team\team-3.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\testimonials\logo1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\testimonials\testimonials-1.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\testimonials\testimonials-2.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\testimonials\testimonials-3.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\testimonials\testimonials-4.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\testimonials\testimonials-5.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\img\treeback.jpg" />
+    <Content Include="EstateAgency\EstateAgency\assets\js\main.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\scss\Readme.txt" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\aos\aos.cjs.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\aos\aos.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\aos\aos.esm.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\aos\aos.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\all.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\brands.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\brands.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\fontawesome.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\regular.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\regular.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\solid.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\solid.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\v4-font-face.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\v4-font-face.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\v4-shims.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\v5-font-face.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\css\v5-font-face.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\php-email-form\validate.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\purecounter\purecounter_vanilla.js" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\swiper\swiper-bundle.min.css" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\swiper\swiper-bundle.min.js" />
+    <Content Include="EstateAgency\EstateAgency\bookingrent.aspx" />
+    <Content Include="EstateAgency\EstateAgency\bookingsale.aspx" />
+    <Content Include="EstateAgency\EstateAgency\charts.html" />
+    <Content Include="EstateAgency\EstateAgency\contact.aspx" />
+    <Content Include="EstateAgency\EstateAgency\contact.html" />
+    <Content Include="EstateAgency\EstateAgency\css\styles.css" />
+    <Content Include="EstateAgency\EstateAgency\adminsale.aspx" />
+    <Content Include="EstateAgency\EstateAgency\forms\Readme.txt" />
+    <Content Include="EstateAgency\EstateAgency\founder.aspx" />
+    <Content Include="EstateAgency\EstateAgency\index.aspx" />
+    <Content Include="EstateAgency\EstateAgency\index.html" />
+    <Content Include="EstateAgency\EstateAgency\investors.aspx" />
+    <Content Include="EstateAgency\EstateAgency\js\datatables-simple-demo.js" />
+    <Content Include="EstateAgency\EstateAgency\js\scripts.js" />
+    <Content Include="EstateAgency\EstateAgency\layout-sidenav-light.html" />
+    <Content Include="EstateAgency\EstateAgency\layout-static.html" />
+    <Content Include="EstateAgency\EstateAgency\leadership-team.aspx" />
+    <Content Include="EstateAgency\EstateAgency\Login.aspx" />
+    <Content Include="EstateAgency\EstateAgency\login.html" />
+    <Content Include="EstateAgency\EstateAgency\password.html" />
+    <Content Include="EstateAgency\EstateAgency\properties.aspx" />
+    <Content Include="EstateAgency\EstateAgency\properties.html" />
+    <Content Include="EstateAgency\EstateAgency\property-single.aspx" />
+    <Content Include="EstateAgency\EstateAgency\property-single.html" />
+    <Content Include="EstateAgency\EstateAgency\register.aspx" />
+    <Content Include="EstateAgency\EstateAgency\register.html" />
+    <Content Include="EstateAgency\EstateAgency\rentedit.aspx" />
+    <Content Include="EstateAgency\EstateAgency\saleedit.aspx" />
+    <Content Include="EstateAgency\EstateAgency\service-details.aspx" />
+    <Content Include="EstateAgency\EstateAgency\service-details.html" />
+    <Content Include="EstateAgency\EstateAgency\services.aspx" />
+    <Content Include="EstateAgency\EstateAgency\services.html" />
+    <Content Include="EstateAgency\EstateAgency\starter-page.aspx" />
+    <Content Include="EstateAgency\EstateAgency\starter-page.html" />
+    <Content Include="EstateAgency\EstateAgency\tables.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EstateAgency\EstateAgency\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\adminagent.aspx.cs">
+      <DependentUpon>adminagent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\adminagent.aspx.designer.cs">
+      <DependentUpon>adminagent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\admincontact.aspx.cs">
+      <DependentUpon>admincontact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\admincontact.aspx.designer.cs">
+      <DependentUpon>admincontact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\adminrent.aspx.cs">
+      <DependentUpon>adminrent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\adminrent.aspx.designer.cs">
+      <DependentUpon>adminrent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\agentdetails.aspx.cs">
+      <DependentUpon>agentdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\agentdetails.aspx.designer.cs">
+      <DependentUpon>agentdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\agents.aspx.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\agents.aspx.designer.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\bookingrent.aspx.cs">
+      <DependentUpon>bookingrent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\bookingrent.aspx.designer.cs">
+      <DependentUpon>bookingrent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\bookingsale.aspx.cs">
+      <DependentUpon>bookingsale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\bookingsale.aspx.designer.cs">
+      <DependentUpon>bookingsale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\adminsale.aspx.cs">
+      <DependentUpon>adminsale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\adminsale.aspx.designer.cs">
+      <DependentUpon>adminsale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\founder.aspx.cs">
+      <DependentUpon>founder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\founder.aspx.designer.cs">
+      <DependentUpon>founder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\investors.aspx.cs">
+      <DependentUpon>investors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\investors.aspx.designer.cs">
+      <DependentUpon>investors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\leadership-team.aspx.cs">
+      <DependentUpon>leadership-team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\leadership-team.aspx.designer.cs">
+      <DependentUpon>leadership-team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\properties.aspx.cs">
+      <DependentUpon>properties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\properties.aspx.designer.cs">
+      <DependentUpon>properties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\property-single.aspx.cs">
+      <DependentUpon>property-single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\property-single.aspx.designer.cs">
+      <DependentUpon>property-single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\rentedit.aspx.cs">
+      <DependentUpon>rentedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\rentedit.aspx.designer.cs">
+      <DependentUpon>rentedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\saleedit.aspx.cs">
+      <DependentUpon>saleedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\saleedit.aspx.designer.cs">
+      <DependentUpon>saleedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\service-details.aspx.cs">
+      <DependentUpon>service-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\service-details.aspx.designer.cs">
+      <DependentUpon>service-details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\starter-page.aspx.cs">
+      <DependentUpon>starter-page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstateAgency\EstateAgency\starter-page.aspx.designer.cs">
+      <DependentUpon>starter-page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\aos\aos.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap-icons\bootstrap-icons.json" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\fontawesome-free\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\purecounter\purecounter_vanilla.js.map" />
+    <Content Include="EstateAgency\EstateAgency\assets\vendor\swiper\swiper-bundle.min.js.map" />
+    <Content Include="EstateAgency\EstateAgency\forms\contact.php" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59599</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44314/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
